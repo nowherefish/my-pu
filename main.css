@@ -32,7 +32,7 @@
 		background: rgba(201, 201, 201, 0.54);
 		font-size: 16px;
 		color: #fafafa;
-		margin-top:40px;
+		margin-top:2em;
 		
 	}
 	/* Menu Button 
@@ -133,7 +133,11 @@
 		padding-right: 40pt;
 		background: rgba(247, 123, 100, 0.55);
 	}
-	
+.top{
+	text-align: center;
+}
+
+
 	.m-top-20 {
 		margin-top: 20px;
 	}
@@ -213,3 +217,5 @@
 		padding: :110%;
 		background: rgba(247, 100, 100, 0.94);
 	}
+
+
