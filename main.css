@@ -1,9 +1,8 @@
 	* {
 		box-sizing: border-box;
-		font-family: inherit;
+		font-family: inherit, sans-serif;
 	}
 	
-	html,
 	body {
 		background-color: #fafafa;
 		font-size: 16px;
@@ -12,7 +11,6 @@
 		padding: 0;
 		margin-left: 0;
 		margin-right: 0;
-		
 		/* 字型  font-family: 'gotham_bookregular';*/
 	}
 	/*版面設定*/
@@ -32,8 +30,7 @@
 		background: rgba(201, 201, 201, 0.54);
 		font-size: 16px;
 		color: #fafafa;
-		margin-top:4em;
-		
+		margin-top: 4em;
 	}
 	/* Menu Button 
 	
@@ -133,11 +130,11 @@
 		padding-right: 40pt;
 		background: rgba(247, 123, 100, 0.55);
 	}
-.top{
-	text-align: center;
-}
-
-
+	
+	.top {
+		text-align: center;
+	}
+	
 	.m-top-20 {
 		margin-top: 20px;
 	}
@@ -196,26 +193,153 @@
 
 	/*動畫*/
 	
-	.circle1 {
+	li ~ .circle{
+		display: flex;
+		flex-direction: row;
 		width: 30pt;
 		height: 30pt;
 		border-radius: 50%;
 		background: rgba(121, 121, 121, 0.21);
+		line-height: 20pt;
 	}
 	
-	.circle2 {
-		width: 30pt;
-		height: 30pt;
-		border-radius: 50%;
-		background: rgba(247, 202, 100, 0.94);
+	/*相簿*/
+	
+	.row>.column {
+		padding: 0 3px;
 	}
 	
-	.circle3 {
-		width: 30pt;
-		height: 30pt;
-		border-radius: 50%;
-		padding: :110%;
-		background: rgba(247, 100, 100, 0.94);
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
 	}
-
-
+	/*縮圖*/
+	
+	.column {
+		float: left;
+		width: 100%;
+	}
+	
+	cursor1 {
+		flex: initial width: 25%;
+	}
+	/* The Modal (background) */
+	
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 50px;
+		left: 0;
+		top: 25pt;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0, 0, 0, 0.87);
+	}
+	/* Modal Content */
+	
+	.modal-content {
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.87);
+		margin: auto;
+		padding: 0;
+		width: 10%;
+		max-width: 1000px;
+		min-width: 400px;
+	}
+	/* The Close Button */
+	
+	.close {
+		color: white;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		font-size: 35px;
+		font-weight: bold;
+	}
+	
+	.close:hover,
+	.close:focus {
+		color: #999;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	.mySlides {
+		display: none;
+	}
+	
+	.cursor {
+		cursor: pointer;
+	}
+	/* Next & previous buttons */
+	
+	.prev,
+	.next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		padding: 16px;
+		margin-top: -50px;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+	/* Position the "next button" to the right */
+	
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+	/* On hover, add a black background color with a little bit see-through */
+	
+	.prev:hover,
+	.next:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	/* Number text (1/3 etc) */
+	
+	.numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
+	
+	img {
+		margin-bottom: -4px;
+	}
+	/*相片註解*/
+	
+	.caption-container {
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.87);
+		padding: 2px 16px;
+		color: white;
+	}
+	
+	.demo {
+		opacity: 0.3;
+		width: 20%;
+	}
+	
+	.active,
+	.demo:hover {
+		opacity: 1;
+	}
+	
+	img.hover-shadow {
+		transition: 0.3s
+	}
+	
+	.hover-shadow:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+	}
