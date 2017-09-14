@@ -7,12 +7,32 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 	<!--導覽列-->
+	<!-- creative menu -->
+            <div class="container">
+              <div class="row">
+                <div class="menu-wrap">
+				<nav class="menu">
+				    <!-- Menu Links -->
+					<div class="icon-list">
+						<a href="#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+						<a href="#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+						<a href="#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
+						<a href="#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
+						<a href="#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+					</div>
+				</nav>
+			    </div>
+			    <button class="menu-button" id="open-button"></button><!-- menu button -->
+              </div><!--/row-->
+            </div><!--/container-->
+	
+<!--	
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -26,12 +46,12 @@
 				<li><a href="#contact">CONTACT</a></li>
 			</ul>
 		</div>
-	</nav>
+	</nav>-->
 
 
 	<!--home-->
 	<section id="home" class="home content">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="main_home">
 					<div class="col-md-6">
@@ -49,12 +69,13 @@
 						<div class="col-md-6">
 							<div class="bottons">
 								<div class="home_btns text-left">
-								<br>
+									<br>
+									
 									<ul class="box">
 										<li class="circle"></li>
 										<li class="circle"></li>
 										<li class="circle"></li>
-										
+
 									</ul>
 									<hr>
 									<div class="box_text">
@@ -70,6 +91,7 @@
 							<li class="active"><a href="#">Design</a></li>
 							<li class="active"><a href="#">Contact</a></li>
 						</ul>
+						
 -->
 							</div>
 						</div>
@@ -110,7 +132,8 @@
 			<div class="row">
 				<div class="col-md-6 col-xs-12">
 					<div class="text m-top-30">
-						<p>嗨！可以叫我佩妤，在進入語法的世界裡我探索到不足的自己，也找到屬於新的我，在我過去的工作經歷中你可能找不到網頁的經驗連結點，但也因在這些經驗中讓我找到屬於我的價值， 讓喜歡的事變得有價值 每次的探索我將會找到屬於新的我 在我過去的經歷中你可能找不到網頁的經驗連結點 但在這些經驗中我找到屬於我的位置
+						<p>嗨！可以叫我佩妤，在語法的世界裡我探索到不足的自己，也找到屬於新的我，在我過去的工作經歷中，你可能找不到網頁相關經驗連結點，但也因在過去的經驗中讓我更加清楚知道到對網頁前端設計一直擁有著熱誠，於是這次我想勇敢的對自己負責，我從零開始也就是這裡開始，您可以從這裡開始認識我，屬於我的另一個價值．
+			
 
 							<br><br><br></p>
 					</div>
@@ -127,11 +150,9 @@
 							<li><a href=""><i class="chevron-right"></i>中國信託&nbsp; |  2015-2017/05</a></li>
 							<li><a href=""><i class="chevron-right"></i>財團法人證券期貨發展基金會&nbsp;| 2013-2015/03</a></li>
 							<li><a href=""><i class="chevron-right"></i>日鑫事業股份有限公司&nbsp;| 2012-2013/04</a></li>
-						</ul>
-							<p>更進一步認識我:
-							<button type="button" class="btn btn-default btn-sm">
-							<span class="glyphicon glyphicon-user"></span> 履歷 </button>
-						</p>
+						</ul><br>
+						<p>更進一步認識我:
+								<a href="" class="id-btn"><i class="fa fa-id-badge">&nbsp;履歷</i></a>
 					</div>
 				</div>
 				<div class="row">
@@ -175,7 +196,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-7 col-xs-12">
-						<div class="design text"><br><br>coming soon</div>
+						<div class="design text"><br><br>從日常開始累積作品，我的創作養分來自生活，沒有侷限對新的事物總是勇於嘗試，從中找到自己的可能性，把喜歡的事變得有價值讓作品更多元，請繼續期待我的新作品，coming soon</div>
 					</div>
 					<div class="col-md-5 text-right">
 						<div class="divider m-top-50">
@@ -192,7 +213,7 @@
 					<div class="col-md-3 col-xs-12">
 						<div class="column">
 							<img src="image/design2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-							<p><br>攝影作品<br>或許我們有著一樣美麗的回憶</p>
+							<p><br>攝影作品<br>當你爬上山你將看見不一樣的城市</p>
 						</div>
 					</div>
 					<div class="col-md-3 col-xs-12">
@@ -318,37 +339,31 @@
 	<section>
 		<div class="col-md-12">
 			<div class="top">
-				<a href="#home">
-					<button type="button top" class="btn btn-default" aria-label="Left Align">
-				<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
-			</button>
-				</a>
+				<a href="#home" class="up-btn"><i class="fa fa-chevron-up"></i></a>
 			</div>
 		</div>
-
 	</section>
 	<!--fb ig-->
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<ul class="social-buttons">
-
-						<span class="glyphicon glyphicon-c" aria-hidden="true"></span>
-
-						<li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
-						<!-- facebook -->
-						<li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li>
-						<!-- ig -->
-						<li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li>
-						<!-- mail -->
-					</ul>
+	<section id="footer">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-5">
+						<ul class="social-buttons">
+							<li><a href="#home" class="social-btn"><i class="fa fa-facebook"></i></a></li>
+							<!-- facebook -->
+							<li><a href="#home" class="social-btn"><i class="fa fa-instagram"></i></a></li>
+							<!-- ig -->
+							<li><a href="#home" class="social-btn"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+							<!-- mail -->
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-<script>
+	<script>
 		function openModal() {
 			document.getElementById('myModal').style.display = "block";
 		}
@@ -389,13 +404,16 @@
 			dots[slideIndex - 1].className += " active";
 			captionText.innerHTML = dots[slideIndex - 1].alt;
 		}
+
 	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
+
 	</script>
-	
-	
+
+
 
 </body>
 
