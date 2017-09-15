@@ -14,23 +14,24 @@
 <body>
 	<!--導覽列-->
 	<!-- creative menu -->
-            <div class="container">
-              <div class="row">
-                <div class="menu-wrap">
-				<nav class="menu">
-				    <!-- Menu Links -->
-					<div class="icon-list">
-						<a href="#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
-						<a href="#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
-						<a href="#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
-						<a href="#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
-						<a href="#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
-					</div>
-				</nav>
-			    </div>
-			    <button class="menu-button" id="open-button"></button><!-- menu button -->
-              </div><!--/row-->
-            </div><!--/container-->
+           <div class="container">
+		<div class="row">
+			<div class="col-md-2">
+			<div class="abbtn">
+				<button class="fa fa-align-justify"></button></div>
+			</div>
+			<div class="col-md-10">
+				<div id="menu">
+					<a href="#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+					<a href="#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+					<a href="#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
+					<a href="#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
+					<a href="#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+				</div>
+			</div>
+		</div><!--/row-->
+	</div><!--/container-->
+            
 	
 <!--	
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -348,7 +349,7 @@
 		<div class="container-fluid">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 col-md-offset-5">
+					<div class="col-md-12">
 						<ul class="social-buttons">
 							<li><a href="#home" class="social-btn"><i class="fa fa-facebook"></i></a></li>
 							<!-- facebook -->
@@ -364,6 +365,12 @@
 	</section>
 
 	<script>
+		$(document).ready(function() {
+			$("#abbtn").click(function() {
+				$("#menu").animate({height:'toggle'};
+			});
+		});
+		
 		function openModal() {
 			document.getElementById('myModal').style.display = "block";
 		}
