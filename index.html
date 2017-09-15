@@ -14,11 +14,11 @@
 <body>
 	<!--導覽列-->
 	<!-- creative menu -->
-           <div class="container">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
-			<div class="abbtn">
-				<button class="fa fa-align-justify"></button></div>
+				<div class="abbtn">
+					<button class="fa fa-align-justify"></button></div>
 			</div>
 			<div class="col-md-10">
 				<div id="menu">
@@ -29,11 +29,13 @@
 					<a href="#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
 				</div>
 			</div>
-		</div><!--/row-->
-	</div><!--/container-->
-            
-	
-<!--	
+		</div>
+		<!--/row-->
+	</div>
+	<!--/container-->
+
+
+	<!--	
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -71,13 +73,8 @@
 							<div class="bottons">
 								<div class="home_btns text-left">
 									<br>
-									
-									<ul class="box">
-										<li class="circle"></li>
-										<li class="circle"></li>
-										<li class="circle"></li>
 
-									</ul>
+
 									<hr>
 									<div class="box_text">
 
@@ -111,9 +108,34 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="lead m-top-20">
-						<p>設計理念 <br><br><br></p>
-
+					<div class="lead-box m-top-5 text-center">
+						<br>
+						<h3>“在語法中，符號擁有一種魔法經過串聯將擁有新生命” </h3>
+						<br>
+					</div>
+					<div class="col-md-3 col-md-offset-1 col-xs-12">
+						<div class="lead-about">
+							<img src="image/lead1.png" alt="魔法一">
+							<div class="circle1">
+								<div>魔法指示：<br>井字號<br>擁有獨特的唯一性</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-offset-1 col-xs-12">
+						<div class="lead-design">
+							<img src="image/lead2.png" alt="魔法二">
+							<div class="circle2">
+								<div>魔法指示：<br>驚嘆號<br>優先看到它</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-offset-1 col-xs-12">
+						<div class="lead-container">
+							<img src="image/lead3.png" alt="魔法三">
+							<div class="circle3">
+								<div>魔法指示：<br>分號<br>代表結束一個段落</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -134,7 +156,7 @@
 				<div class="col-md-6 col-xs-12">
 					<div class="text m-top-30">
 						<p>嗨！可以叫我佩妤，在語法的世界裡我探索到不足的自己，也找到屬於新的我，在我過去的工作經歷中，你可能找不到網頁相關經驗連結點，但也因在過去的經驗中讓我更加清楚知道到對網頁前端設計一直擁有著熱誠，於是這次我想勇敢的對自己負責，我從零開始也就是這裡開始，您可以從這裡開始認識我，屬於我的另一個價值．
-			
+
 
 							<br><br><br></p>
 					</div>
@@ -153,7 +175,7 @@
 							<li><a href=""><i class="chevron-right"></i>日鑫事業股份有限公司&nbsp;| 2012-2013/04</a></li>
 						</ul><br>
 						<p>更進一步認識我:
-								<a href="" class="id-btn"><i class="fa fa-id-badge">&nbsp;履歷</i></a>
+							<a href="" class="id-btn"><i class="fa fa-id-badge">&nbsp;履歷</i></a>
 					</div>
 				</div>
 				<div class="row">
@@ -366,58 +388,56 @@
 
 	<script>
 		$(document).ready(function() {
-			$("#abbtn").click(function() {
-				$("#menu").animate({height:'toggle'};
-			});
-		});
-		
-		function openModal() {
-			document.getElementById('myModal').style.display = "block";
-		}
+					$("#abbtn").click(function() {
+							$("#menu").animate({
+									height: 'toggle'
+								};
+							});
+					});
 
-		function closeModal() {
-			document.getElementById('myModal').style.display = "none";
-		}
+				function openModal() {
+					document.getElementById('myModal').style.display = "block";
+				}
 
-		var slideIndex = 1;
-		showSlides(slideIndex);
+				function closeModal() {
+					document.getElementById('myModal').style.display = "none";
+				}
 
-		function plusSlides(n) {
-			showSlides(slideIndex += n);
-		}
+				var slideIndex = 1; showSlides(slideIndex);
 
-		function currentSlide(n) {
-			showSlides(slideIndex = n);
-		}
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
 
-		function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("demo");
-			var captionText = document.getElementById("caption");
-			if (n > slides.length) {
-				slideIndex = 1
-			}
-			if (n < 1) {
-				slideIndex = slides.length
-			}
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex - 1].style.display = "block";
-			dots[slideIndex - 1].className += " active";
-			captionText.innerHTML = dots[slideIndex - 1].alt;
-		}
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
 
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("demo");
+					var captionText = document.getElementById("caption");
+					if (n > slides.length) {
+						slideIndex = 1
+					}
+					if (n < 1) {
+						slideIndex = slides.length
+					}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex - 1].style.display = "block";
+					dots[slideIndex - 1].className += " active";
+					captionText.innerHTML = dots[slideIndex - 1].alt;
+				}
 	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-
-
 	</script>
 
 
