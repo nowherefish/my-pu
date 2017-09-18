@@ -32,9 +32,8 @@ body {
 	background: rgba(201, 201, 201, 0.54);
 	font-size: 16px;
 	color: #fafafa;
-	margin-top: 2em;
+	margin-top: 1em;
 	padding-bottom: 3em;
-	
 }
 
 #footer {
@@ -61,54 +60,37 @@ body {
 	padding-top: 40px;
 }
 
+/*nav*/
 
-/*
-	.menu-button,
-	.menu-wrap {
-		position: absolute;
-		top: 5%;
-		left: 5%;
-		width: 2.5em;
-		height: 2.25em;
-		font-size: 1.5em;
-	}
-	/* Menu Button 
-	
-	.menu-button {
-		margin: 0;
-		padding: 0;
-		border: none;
-		text-indent: 2.5em;
-		color: #fafafa;
-		background: #fafafa;
-	}
-	
-	.menu-button::before {
-		position: absolute;
-		top: 0.5em;
-		right: 0.5em;
-		bottom: 0.5em;
-		left: 0.5em;
-		background: linear-gradient(#E04343 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, #E04343 40%, #E04343 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 80%, #E04343 80%);
-		content: '';
-	}
-	/*移過後透明度
-	
-	.menu-button:hover {
-		opacity: 0.6;
-	}
-	/* Menu 
-	
-	.menu-wrap {
-		background: rgba(255, 255, 255, 1);
-		
-	}
-	
-	.menu {
-		height: 100%;
-		font-size: 0.75em;
-	}
-*/
+.nav {
+	position: fixed;
+	bottom: :10px;
+	right: 50px;
+	width: -40px;
+	top: 45%;
+	background-color: rgba(240, 248, 255, 0);
+}
+
+img[src*="b-"] {
+	width: auto;
+	height: 5em;
+	padding-top: 15px;
+}
+
+
+/*========================================home button============================================*/
+
+.bt-box {
+	width: 100px;
+	height: auto;
+	display: flex;
+}
+
+img[src*="btn"] {
+	width: 8em;
+	height: 8em;
+	padding-left: 10px;
+}
 
 
 /*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝字型設定＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
@@ -192,47 +174,9 @@ span {
 	margin-top: 100px;
 }
 
-.m-top-260 {
-	margin-top: 260px;
+.m-top-400 {
+	margin-top: 400px;
 }
-
-
-/*間距對齊
-	
-	.roomy-150 {
-		padding-top: 150px;
-		padding-bottom: 150px;
-	}
-	
-	.roomy-100 {
-		padding-top: 100px;
-		padding-bottom: 100px;
-	}
-	
-	.roomy-80 {
-		padding-top: 100px;
-		padding-bottom: 80px;
-	}
-	
-	.roomy-70 {
-		padding-top: 100px;
-		padding-bottom: 70px;
-	}
-	
-	.roomy-60 {
-		padding-top: 100px;
-		padding-bottom: 60px;
-	}
-	
-	.roomy-50 {
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
-	
-	.roomy-40 {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
 
 	/*=========================================lead================================================*/
 
@@ -240,6 +184,7 @@ img[src*="lead"] {
 	width: 7em;
 	height: auto;
 	display: inline-block;
+	padding-top: 40px;
 }
 
 .circle1 {
@@ -253,7 +198,6 @@ img[src*="lead"] {
 	left: px;
 	text-align: center;
 	padding-top: 40px;
-	
 }
 
 .circle2 {
@@ -264,7 +208,7 @@ img[src*="lead"] {
 	display: inline-block;
 	position: absolute;
 	top: em;
-	left:;
+	left: ;
 	text-align: center;
 	padding-top: 40px;
 }
@@ -282,26 +226,34 @@ img[src*="lead"] {
 	padding-top: 40px;
 }
 
+
 /*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝Lightbox＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
 .row>.column {
 	padding: 0 3px;
 }
+
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
+
 /*縮圖*/
+
 .column {
 	float: left;
 	width: 100%;
 }
+
 cursor1 {
 	flex: initial width: 25%;
 }
 
+
 /* The Modal (background) */
+
 .modal {
 	display: none;
 	position: fixed;
@@ -315,7 +267,9 @@ cursor1 {
 	background-color: rgba(0, 0, 0, 0.87);
 }
 
+
 /* Modal Content */
+
 .modal-content {
 	position: relative;
 	background-color: rgba(0, 0, 0, 0.87);
@@ -326,7 +280,9 @@ cursor1 {
 	min-width: 400px;
 }
 
+
 /* The Close Button */
+
 .close {
 	color: white;
 	position: absolute;
@@ -335,20 +291,25 @@ cursor1 {
 	font-size: 35px;
 	font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
 	color: #999;
 	text-decoration: none;
 	cursor: pointer;
 }
+
 .mySlides {
 	display: none;
 }
+
 .cursor {
 	cursor: pointer;
 }
 
+
 /* Next & previous buttons */
+
 .prev,
 .next {
 	cursor: pointer;
@@ -366,19 +327,25 @@ cursor1 {
 	-webkit-user-select: none;
 }
 
+
 /* Position the "next button" to the right */
+
 .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 /* Number text (1/3 etc) */
+
 .numbertext {
 	color: #f2f2f2;
 	font-size: 12px;
@@ -386,34 +353,43 @@ cursor1 {
 	position: absolute;
 	top: 0;
 }
+
 img {
 	margin-bottom: -4px;
 }
 
+
 /*img-content*/
+
 .caption-container {
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.87);
 	padding: 2px 16px;
 	color: white;
 }
+
 .demo {
 	opacity: 0.3;
 	width: 20%;
 }
+
 .active,
 .demo:hover {
 	opacity: 1;
 }
+
 img.hover-shadow {
 	transition: 0.3s
 }
+
 .hover-shadow:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
+
 /*===========================================icon btn(top.footer)=========================================*/
-.up-btn {
+
+.dw-btn {
 	width: 50px;
 	height: 50px;
 	background: rgba(144, 144, 144, 0.45);
@@ -430,18 +406,22 @@ img.hover-shadow {
 	margin-left: auto;
 	margin-right: auto;
 }
-.up-btn:hover,
-up-btn:focus {
+
+.dw-btn:hover,
+dw-btn:focus {
 	color: black;
 	background: #FFE800;
 }
 
+
 /*footer*/
+
 ul.social-buttons li {
 	display: inline-block;
 	margin-right: 10px;
 	margin-top: 10px;
 }
+
 .social-btn {
 	width: 40px;
 	height: 40px;
@@ -453,6 +433,7 @@ ul.social-buttons li {
 	padding-top: 10px;
 	padding-bottom: 20px;
 }
+
 .social-btn:hover,
 .social-btn:focus {
 	background: rgba(255, 232, 0, 1);

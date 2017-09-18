@@ -12,86 +12,29 @@
 </head>
 
 <body>
-	<!--導覽列-->
-	<!-- creative menu -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2">
-				<div class="abbtn">
-					<button class="fa fa-align-justify"></button></div>
-			</div>
-			<div class="col-md-10">
-				<div id="menu">
-					<a href="#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
-					<a href="#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
-					<a href="#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
-					<a href="#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
-					<a href="#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
-				</div>
-			</div>
-		</div>
-		<!--/row-->
-	</div>
-	<!--/container-->
-
-
-	<!--	
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Logo</a>
-			</div>
-
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#">HOME</a></li>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#design">DESIGN</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-			</ul>
-		</div>
-	</nav>-->
-
-
 	<!--home-->
 	<section id="home" class="home content">
 		<div class="container">
 			<div class="row">
 				<div class="main_home">
-					<div class="col-md-6">
-						<div class="home-shadow m-top-100">
+					<div class="col-md-5 col-md-offset-3">
+						<div class="home-shadow m-top-50">
 							<img src="image/home-img.png" alt="" />
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="home_text text-left m-top-260">
+					<div class="col-md-4">
+						<div class="home_text text-left m-top-400">
 							<h4>Hello my name is PEI YU</h4>
 							<h1 class="text-black">#webdesigner</h1>
 							<p>讓我帶你一起進入我的符號世界！</p>
 
 						</div>
-						<div class="col-md-6">
-							<div class="bottons">
-								<div class="home_btns text-left">
-									<br>
-
-
-									<hr>
-									<div class="box_text">
-
-										<a href="#about" class="">About</a>
-										<a href="#design" class="btn btn-primary ">Design</a>
-										<a href="#contact" class="btn btn-primary ">Contact</a>
-									</div>
-								</div>
-								<!--
-						<ul class="btns-show">
-							<li class="active"><a href="#">About</a></li>
-							<li class="active"><a href="#">Design</a></li>
-							<li class="active"><a href="#">Contact</a></li>
-						</ul>
-						
--->
-							</div>
+					</div>
+					
+					<!--down-->
+					<div class="col-md-12">
+						<div class="top">
+							<a href="#page" class="dw-btn"><i class="fa fa-chevron-down"></i></a>
 						</div>
 					</div>
 				</div>
@@ -105,7 +48,7 @@
 
 	<!--設計理念-->
 	<section id="page" class="page content">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="lead-box m-top-5 text-center">
@@ -113,7 +56,7 @@
 						<h3>“在語法中，符號擁有一種魔法經過串聯將擁有新生命” </h3>
 						<br>
 					</div>
-					<div class="col-md-3 col-md-offset-1 col-xs-12">
+					<div class="col-md-3 col-xs-12 text-center">
 						<div class="lead-about">
 							<img src="image/lead1.png" alt="魔法一">
 							<div class="circle1">
@@ -121,7 +64,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-md-offset-1 col-xs-12">
+					<div class="col-md-3 col-md-offset-1 col-xs-12 text-center">
 						<div class="lead-design">
 							<img src="image/lead2.png" alt="魔法二">
 							<div class="circle2">
@@ -129,7 +72,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-md-offset-1 col-xs-12">
+					<div class="col-md-3 col-md-offset-1 col-xs-12 text-center">
 						<div class="lead-container">
 							<img src="image/lead3.png" alt="魔法三">
 							<div class="circle3">
@@ -284,7 +227,7 @@
 							<p id="caption"></p>
 						</div>
 
-						<!--縮圖
+						<!--縮圖-->
 						<div class="column">
 							<img class="demo cursor1" src="image/design1.jpg"style="width:25%" onclick="currentSlide(1)" alt="攝影作品<br>晚霞燦爛照著">
 						</div>
@@ -296,7 +239,7 @@
 						</div>
 						<div class="column">
 							<img class="demo cursor1" src="image/design4.jpg"style="width:100%" onclick="currentSlide(4)" alt="手繪作品：魚<br>作品故事：">
-						</div>-->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -358,14 +301,7 @@
 	</section>
 
 
-	<!--top-->
-	<section>
-		<div class="col-md-12">
-			<div class="top">
-				<a href="#home" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-			</div>
-		</div>
-	</section>
+
 	<!--fb ig-->
 	<section id="footer">
 		<div class="container-fluid">
@@ -434,10 +370,13 @@
 					dots[slideIndex - 1].className += " active";
 					captionText.innerHTML = dots[slideIndex - 1].alt;
 				}
+
 	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
+
 	</script>
 
 
