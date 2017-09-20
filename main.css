@@ -59,56 +59,6 @@ body {
 	padding-top: 40px;
 }
 
-
-/*
-	.menu-button,
-	.menu-wrap {
-		position: absolute;
-		top: 5%;
-		left: 5%;
-		width: 2.5em;
-		height: 2.25em;
-		font-size: 1.5em;
-	}
-	/* Menu Button 
-	
-	.menu-button {
-		margin: 0;
-		padding: 0;
-		border: none;
-		text-indent: 2.5em;
-		color: #fafafa;
-		background: #fafafa;
-	}
-	
-	.menu-button::before {
-		position: absolute;
-		top: 0.5em;
-		right: 0.5em;
-		bottom: 0.5em;
-		left: 0.5em;
-		background: linear-gradient(#E04343 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, #E04343 40%, #E04343 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 80%, #E04343 80%);
-		content: '';
-	}
-	/*移過後透明度
-	
-	.menu-button:hover {
-		opacity: 0.6;
-	}
-	/* Menu 
-	
-	.menu-wrap {
-		background: rgba(255, 255, 255, 1);
-		
-	}
-	
-	.menu {
-		height: 100%;
-		font-size: 0.75em;
-	}
-*/
-
-
 /*nav*/
 
 .nav {
@@ -133,8 +83,6 @@ img[src*="b-"] {
 	background-image: url(image/home-bg2.png);
 	margin-right: 40px;		
 }
-
-
 
 /*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝字型設定＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
 
@@ -220,44 +168,6 @@ span {
 .m-top-400 {
 	margin-top: 400px;
 }
-
-
-/*間距對齊
-	
-	.roomy-150 {
-		padding-top: 150px;
-		padding-bottom: 150px;
-	}
-	
-	.roomy-100 {
-		padding-top: 100px;
-		padding-bottom: 100px;
-	}
-	
-	.roomy-80 {
-		padding-top: 100px;
-		padding-bottom: 80px;
-	}
-	
-	.roomy-70 {
-		padding-top: 100px;
-		padding-bottom: 70px;
-	}
-	
-	.roomy-60 {
-		padding-top: 100px;
-		padding-bottom: 60px;
-	}
-	
-	.roomy-50 {
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
-	
-	.roomy-40 {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
 
 	/*=========================================lead================================================*/
 
