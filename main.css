@@ -1,17 +1,15 @@
 * {
 	box-sizing: border-box;
-	font-family: 'inherit, sans-serif';
+	font-family: 'gotham_bookregular,inherit, sans-serif';
 }
 
 body {
 	background-color: #fafafa;
 	font-size: 16px;
 	color: #797979;
-	width: 100%;
 	padding: 0;
 	margin-left: 0;
 	margin-right: 0;
-	/* 字型  font-family: 'gotham_bookregular';*/
 }
 
 
@@ -60,7 +58,6 @@ body {
 }
 
 /*nav*/
-
 .nav {
 	position: fixed;
 	bottom: :10px;
@@ -100,15 +97,15 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.title {
+h6 {
 	margin: 0;
 	color: rgba(247, 123, 100, 0.94);
 	
 }
 
 .mark {
-	height: 55pt;
+	margin-top: 100pt;
+	margin-bottom: -30pt;
 	color: rgba(247, 123, 100, 0.94);
 	font-size: 100px;
 	background: #fafafa;
