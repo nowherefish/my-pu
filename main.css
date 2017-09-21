@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: inherit, sans-serif;
+	font-family: 'inherit, sans-serif';
 }
 
 body {
@@ -79,10 +79,19 @@ img[src*="b-"] {
 
 /*========================================home ============================================*/
 .home{
+	width: 100%;
+	height: auto;
 	background-color: rgba(0, 0, 0, 0);
 	background-image: url(image/home-bg2.png);
-	margin-right: 40px;		
 }
+
+.banner {
+	width: 1em;	
+	height: 41em;
+	float: left;
+	
+}
+
 
 /*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝字型設定＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
 
@@ -95,7 +104,7 @@ h6,
 .title {
 	margin: 0;
 	color: rgba(247, 123, 100, 0.94);
-	margin-bottom: 10px;
+	
 }
 
 .mark {
@@ -134,11 +143,13 @@ span {
 
 
 /*about poto*/
-
-.avater {
-	padding-bottom: 10pt;
-	padding-right: 40pt;
-	background: rgba(247, 123, 100, 0.55);
+img[src*="ava"] {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	background: rgba(247, 123, 100, 0.55);	
 }
 
 .top {
@@ -185,8 +196,6 @@ img[src*="lead"] {
 	background: rgba(251, 176, 59, 0.6);
 	display: inline-block;
 	position: absolute;
-	top: em;
-	left: px;
 	text-align: center;
 	padding-top: 40px;
 }
@@ -198,8 +207,6 @@ img[src*="lead"] {
 	background: rgba(101, 200, 208, 0.6);
 	display: inline-block;
 	position: absolute;
-	top: em;
-	left: ;
 	text-align: center;
 	padding-top: 40px;
 }
@@ -211,8 +218,6 @@ img[src*="lead"] {
 	background: rgba(186, 155, 201, 0.6);
 	display: inline-block;
 	position: absolute;
-	top: em;
-	left: px;
 	text-align: center;
 	padding-top: 40px;
 }
