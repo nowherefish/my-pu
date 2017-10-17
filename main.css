@@ -60,16 +60,17 @@ body {
 /*nav*/
 .nav {
 	position: fixed;
-	bottom: :10px;
+	bottom: :2px;
 	right: 50px;
-	width: -40px;
-	top: 45%;
+	width: auto;
+	top: 28em;
 	background-color: rgba(240, 248, 255, 0);
+	z-index: 1;
 }
 
 img[src*="b-"] {
 	width: auto;	
-	height: 5em;
+	height: 4em;
 	padding-top: 15px;
 }
 
@@ -189,8 +190,8 @@ img[src*="lead"] {
 }
 
 .circle1 {
-	width: 160px;
-	height: 160px;
+	width: 10em;
+	height: 10em;
 	border-radius: 50%;
 	background: rgba(251, 176, 59, 0.6);
 	display: inline-block;
@@ -200,8 +201,8 @@ img[src*="lead"] {
 }
 
 .circle2 {
-	width: 160px;
-	height: 160px;
+	width: 10em;
+	height: 10em;
 	border-radius: 50%;
 	background: rgba(101, 200, 208, 0.6);
 	display: inline-block;
@@ -211,8 +212,8 @@ img[src*="lead"] {
 }
 
 .circle3 {
-	width: 160px;
-	height: 160px;
+	width: 10em;
+	height: 10em;
 	border-radius: 50%;
 	background: rgba(186, 155, 201, 0.6);
 	display: inline-block;
